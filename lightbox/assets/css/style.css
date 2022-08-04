@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran&display=swap');
+
+/* css variable */
+:root{
+  --primary:#333;
+  --secondary:#444;
+}
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family: 'Catamaran', sans-serif;
+  font-size: 1.1rem;
+  background: #fff;
+  line-height: 1.6;
+  color: var(--primary);
+}
+
+h1,h2,h3,h4{
+  line-height: 1.3;
+}
+
+a{
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+img{
+  width: 100%;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  max-width: 1100px;
+  padding:0 0.2rem;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* navbar */
+
+.navbar .container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr)
+}
+
+.navbar .brand{
+  font-size: 2rem;
+}
+
+.navbar .nav{
+  justify-self:flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .nav a{
+  padding: 0 1.1rem;
+  text-transform: uppercase;
+}
+
+.navbar .nav a:hover{
+  color:var(--primary);
+  border-bottom: 3px solid var(--secondary);
+  transition: border-bottom 5s ease-in-out;
+}
+
+/* banner */
+
+.banner .container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.banner-left{
+  margin-bottom: 1rem 0;
+}
+
+.banner img{
+  margin: 1rem 0;
+}
+
+.banner h1{
+  font-size: 4rem;
+  margin-top: 160px;
+}
+
+.banner p{
+  margin: 1rem 0;
+}
+
+.banner a{
+  background: var(--primary);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  text-transform:capitalize;
+}
+
+.banner a:hover{
+  background: var(--secondary)
+}
+
+/* info */
+
+.overlay{
+  background: rgba(0, 0,0,0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right:0;
+  padding:5rem 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.overlay .container{
+  opacity:0;
+  transform: translateY(50px);
+  transition: all 3s ease-in-out;
+}
+
+.overlay .appears{
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.info{
+  background: url('https://i.ibb.co/1RS1dqC/section-b.jpg') no-repeat center/cover;
+  position: relative;
+  height: 600px;
+  color:#fff;
+}
+
+.info h3{
+  font-size: 2rem;
+}
+
+.info h1{
+  font-size: 5rem;
+  margin-top: 1rem;
+}
+
+.info p{
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.gallery a:first-child{
+  grid-row:1/5;
+  grid-column: 1/3;
+}
+
+.gallery a:nth-child(2){
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.gallery a, .gallery img{
+  width:100%;
+  height:100%;
+}
+
+/* footer */
+.footer{
+  background: var(--primary);
+  color:#fff;
+  padding:4rem 0;
+}
+
+.footer .container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+.footer h2{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.footer h3{
+  margin-bottom: 0.7rem;
+  text-transform: capitalize;
+}
+
+.footer a{
+  color:#ccc;
+  line-height: 1.9;
+  font-size: 1.4rem;
+}
+.email-form {
+  width: 100%;
+  display: inline-block;
+  border-radius: 20px;
+  line-height: 0;
+  position: relative;
+  background: #555;
+  margin-top: 1rem;
+}
+
+.email-form .form-control{
+  display: inline-block;
+  border: 0;
+  outline: 0;
+  font-size: 1rem;
+  color: #ddd;
+  border-radius: 20px;
+  height:45px;
+  background: transparent;
+  padding:0 3rem 0 1.5rem;
+  width: 100%;
+  margin: 0;
+  font-family: inherit;
+}
+
+.email-form .submit{
+  display: inline-block;
+  position: absolute;
+  top:0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  background: #eee;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  border-radius: 0 20px 20px 0;
+}
+
+/* media queries */
+
+@media (max-width:700px){
+  .banner .container{
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    margin:1rem 0;
+  }
+  .banner-left{
+    order:2;
+    margin-bottom: 2rem !important;
+  }
+  .banner-right{
+    order:-1;
+  }
+  .banner img{
+    width:80%
+  }
+
+  .banner h1{
+    font-size: 3rem;
+  }
+
+  .info{
+    margin:1rem 0;
+  }
+
+  .info h1{
+    font-size: 3rem;
+  }
+  .info p{
+    font-size: 1.5rem;
+  }
+
+  .gallery a:first-child{
+    grid-row:none;
+    grid-column: none;
+  }
+
+  .gallery a:nth-child(2){
+    grid-column-start: none;
+    grid-column-end: none;
+  }
+
+  .footer .container{
+    grid-template-columns: repeat(1, 1fr);
+    justify-self:center;
+    text-align: center;
+  }
+
+}

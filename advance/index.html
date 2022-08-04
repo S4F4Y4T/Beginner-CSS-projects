@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>advance project</title>
+    <link rel="stylesheet" href="src/css/style.css?v=1609911586722">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script defer src="src/js/all.js?v=1609911586722"></script>
+</head>
+<body class='default'>
+    <!-- header section here -->
+    <header class="header">
+        <div class="header__container flex justify-between container">
+            <h1 class="header__container--logo">NuxD</h1>
+
+            <input type="checkbox" name="check" class='check' id="check">
+            <label for='check' class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <!-- navbar here -->
+            <ul class="header__navbar navbar flex justify-around">
+                <li class='navbar__list'><a class='navbar__link' href="">Home</a></li>
+                <li class='navbar__list'><a class='navbar__link' href="">About</a></li>
+
+                <li class='navbar__list'>
+                    
+                    <a class='navbar__link' href="">
+                        Project
+                        <i class="fas fa-caret-down"></i>    
+                    </a>
+                   <div class="dropdown">
+                        <ul>
+                            <li><a href="">Frontend</a></li>
+                            <li><a href="">Backend Desgin</a></li>
+                            <li><a href="">Ux/Ui Desgin</a></li>
+
+                            <span class="arrow"></span>
+                        </ul>
+                        
+                    </div>
+                    
+                </li>
+
+                <li class='navbar__list'><a class='navbar__link' href="">Contact</a></li>
+            </ul>
+            <!-- navbar ends here -->
+        </div>
+    </header>
+    <!-- header ends here -->
+
+    <!-- hero section starts here -->
+    <section class="hero">
+        <div class="container hero__container grid">
+            <div class="hero__content">
+                <h1 class="hero__content--title">Best Online Digital Marketing</h1>
+                <p class="hero__content--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minus nobis aliquam soluta at voluptatum nihil qui ex ipsa fuga.</p>
+            </div>
+            <div class="hero__banner">
+                <img src="src/img/undraw_Messages_re_qy9x.svg" alt="" class="hero__banner--img">
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#FF8063" fill-opacity="1" d="M0,160L48,181.3C96,203,192,245,288,229.3C384,213,480,139,576,106.7C672,75,768,85,864,106.7C960,128,1056,160,1152,192C1248,224,1344,256,1392,272L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+          </svg>
+    </section>
+    <!-- hero section ends here -->
+
+    <script src="app/js/app.js"></script>
+</body>
+</html>

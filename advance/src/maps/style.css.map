@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA,GACI,WAAW,CACX,cAAe,CACf,eAAiB","file":"../scss/style.css","sourcesContent":["h1{\r\n    color:green;\r\n    font-size: 60px;\r\n    font-weight: bold;\r\n}"]}

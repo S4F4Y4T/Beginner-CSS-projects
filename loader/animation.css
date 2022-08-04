@@ -1,0 +1,40 @@
+@-webkit-keyframes airplane {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+@keyframes airplane {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+@-webkit-keyframes clouds {
+  from {
+    right: 0;
+  }
+  to {
+    right: 130%;
+  }
+}
+
+@keyframes clouds {
+  from {
+    right: 0;
+  }
+  to {
+    right: 130%;
+  }
+}
+/*# sourceMappingURL=animation.css.map */

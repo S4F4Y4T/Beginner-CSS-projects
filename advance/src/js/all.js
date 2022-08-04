@@ -1,0 +1,1 @@
+const asset={business:300,minister:700,sochib:900},getMax=()=>{for(key in asset)return asset.business,asset.minister,key};console.log(getMax());

@@ -1,0 +1,1 @@
+const hamburger=document.querySelector(".hamburger"),nav=document.querySelector("#flex-res");hamburger.addEventListener("click",e=>{e.preventDefault(),nav.style.display="flex",nav.style.display="none"});

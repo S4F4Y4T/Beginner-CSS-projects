@@ -1,0 +1,91 @@
+/* css variable */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+:root{
+  --primary: #fff;
+  --color:#000;
+  --background: #f1f1f1;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  color:var(--color);
+  font-size: 16px;
+  margin-top: 70px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Poppins', sans-serif;
+}
+/*navbar */
+.navbar-light{
+  background: var(--primary) !important;
+  border:0 !important;
+}
+
+.navbar-brand{
+  font-size:20px;
+  font-weight: bold
+}
+
+/* showcase */
+.showcase h1{
+  font-size:50px;
+  margin-bottom: 20px;
+}
+
+.showcase img{
+  width:90%;
+  margin-left:60px;
+}
+
+.showcase .showcase-right{
+  margin-top:90px;
+}
+
+.showcase p{
+  color: var(--color);
+}
+
+/* testimonial */
+
+.testimonial{
+  background: var(--background);
+  padding:50px 0px 30px 0px;
+  text-align: center;
+  margin-top: 40px
+}
+
+.testimonial p{
+  font-size:1.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/*know */
+.right{
+  margin-top:90px;
+}
+
+.info{
+  margin: 30px 0px 90px 0px
+}
+
+/*contact*/
+.contact{
+  background: url(../image/image3.png);
+  background-position: left;
+  background-size: cover;
+  padding:40px;
+  color:var(--primary);
+  border-top:7px solid #333;
+  border-bottom:7px solid #333;
+}
+
+/*footer*/
+.footer{
+  padding:30px;
+  line-height: 1.5em
+  justify-content:center;
+}

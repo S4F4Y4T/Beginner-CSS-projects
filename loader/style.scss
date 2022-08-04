@@ -1,0 +1,64 @@
+@import 'default.scss';
+
+.preloader{
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100%;
+    width:100%;
+    overflow: hidden;
+    z-index: 100;
+    background: $primary;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: all .5s ease-in-out;
+    color: $lighten;
+
+    .plane{
+        height:150px;
+        width:150px;
+        animation:airplane 1s infinite alternate ease-in-out;
+        z-index: 1;
+    }
+    
+    #cloud1,#cloud2,#cloud3{
+        height:100px;
+        width:auto;
+        position: absolute;
+        right:0;
+        transform: translateX(100%);
+        z-index: -1;
+    }
+    
+    #cloud1{
+        top:20%;
+        animation:clouds 3s infinite;
+    }
+    
+    #cloud2{
+        top:45%;
+        animation:clouds 3s infinite 2s;
+    }
+    
+    #cloud3{
+        top:75%;
+        animation:clouds 3s infinite 1.5s;
+    }
+}
+
+.container{
+    width: 1150px;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity:0;
+    transition: opacity .5s ease-in-out;
+}
+
+@import 'animation.scss';

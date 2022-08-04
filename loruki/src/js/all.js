@@ -1,0 +1,1 @@
+const hamburger=document.querySelector(".navbar i"),navbar=document.querySelector(".navbar .navbar__nav");hamburger.addEventListener("click",e=>{e.preventDefault(),navbar.classList.toggle("open")});

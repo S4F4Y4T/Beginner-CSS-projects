@@ -1,0 +1,175 @@
+@import './utilities';
+
+//navbar starts here
+.navbar{
+    background:$primary-color;
+    color:$light;
+    height:70px;
+
+    h1{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .flex{
+        justify-content: space-between;
+    }
+
+    &__nav{
+        .contact-btn{
+            background: $light;
+            color:$primary-color;
+            padding:10px 30px;
+            transition: transform .3s ease-in-out;
+            &:hover{
+                transform: scale(.95);
+            }
+        }
+
+        a{
+            margin:0 2rem;
+            li{
+                color:$light;
+                letter-spacing: 1px;
+                font-size: .9rem;
+                &:hover{
+                    margin-bottom: 5px;        
+                }
+            }
+            
+            &:last-child{
+                margin-right: 0;
+                
+            }
+        }
+        
+    }
+}
+
+
+//header styles here
+.header{
+    background: rgb(101,31,92);
+    background: $gradient;
+    color:$light;
+
+    .wave{
+        display: block;
+        transform-origin: bottom;
+        animation: animateWave 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    }
+
+    &__content{
+        h1{
+            font-size: 40px;
+            margin:0;
+            line-height: 1;
+        }
+        p{
+            margin:20px 0;
+        }
+    }
+
+}
+
+@keyframes animateWave{
+    0% {
+        transform: scale(1,0);
+      }
+      100% {
+        transform: scale(1,1);
+      }
+}
+
+//about section
+.about{
+    h1{
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        padding-bottom: 8px;
+        text-transform: uppercase;
+       
+          
+    }
+
+    .grid{
+        grid-gap: 20px;
+    }
+    &__main__content{
+        text-align: center;
+        img{
+            width:100px;
+        }
+
+        h3{
+            font-size: 1.4rem;
+            padding:5px 0;
+        }
+    }
+}
+
+//banner section goes here
+.banner{
+    background: $opacity_gradient, url('../../src/img/julien-pouplard-nqyw2rUs1uo-unsplash.jpg') fixed center/cover;
+    color:$light;
+    text-shadow: 0px 3px 1px black;
+    height: 300px;
+    h1{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    p{
+        width: 65%;
+        margin:0 auto;
+        line-height: 1.8;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+}
+
+@media(max-width: 468px){
+    .hamburger{
+        height:5px;
+        width:25px;
+        background:#fff;
+        position: relative;
+        margin:10px;
+        cursor: pointer;
+        &::before{
+            content:'';
+            background: #fff;
+            height: 5px;
+            width:20px;
+            top:-10px;
+            position: absolute;
+            
+        }
+        &::after{
+            content:'';
+            background: #fff;
+            height: 5px;
+            width:30px;
+            top:10px;
+            position: absolute;
+
+        }
+    }
+    #flex-res{
+        justify-content: space-around;
+        display: none;
+    }
+    .navbar__nav{
+        flex-direction: column;
+        position: fixed;;
+        height: 100vh;
+        width:50%;
+        top:70px;
+        right:0;
+        background: $primary-color;
+        justify-content: center;
+        opacity: 0.9;
+        z-index: 100;
+        color:$primary-color;
+    }
+}
+

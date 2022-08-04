@@ -1,0 +1,19 @@
+@keyframes airplane{
+    from{
+        transform:translateY(0px)
+    }
+
+    to{
+        transform:translateY(20px)
+    }
+}
+
+@keyframes clouds{
+    from{
+        right:0;
+    }
+
+    to{
+        right:130%;
+    }
+}
