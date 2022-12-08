@@ -17,7 +17,6 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
@@ -65,7 +64,7 @@ These projects mostly built with core languages where some project may have used
 <!-- GETTING STARTED -->
 ## Getting Started
 
-By following the instructions you can run the script on your machine
+By following the instructions you can run these projects on your machine
 
 ### Installation
 
