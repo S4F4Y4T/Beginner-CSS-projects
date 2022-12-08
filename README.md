@@ -36,8 +36,8 @@
         <li><a href="#css-blur">Css Blur</a></li>
         <li><a href="#loading-animation">Loading Animation</a></li>
         <li><a href="#movie-rating">Movie Rating</a></li>
-        <li><a href="#nav-dropw-down">Nav Drop Down</a></li>
-        <li><a href="#nav">Navbar</a></li>
+        <li><a href="#nav-drop-down">Nav Drop Down</a></li>
+        <li><a href="#navbar">Navbar</a></li>
       </ul>
     </li>
     <li><a href="#license">License</a></li>
