@@ -24,7 +24,7 @@
       <a href="#projects">Projects</a>
       <ul>
         <li><a href="#light-box">Light-box</a></li>
-        <li><a href="#wave">Css Wave</a></li>
+        <li><a href="#css-wave">Css Wave</a></li>
         <li><a href="#microsoft-clone">Microsoft-Clone</a></li>
         <li><a href="#grid-page">Grid Page</a></li>
         <li><a href="#loruki-landing-page">Loruki Landing Page</a></li>
