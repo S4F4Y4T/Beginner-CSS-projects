@@ -70,7 +70,7 @@ By following the instructions you can run these projects on your machine
 
 1. Clone the repo
    ```sh
-   https://github.com/S4F4Y4T/beginner-CSS-projects.git
+   git clone https://github.com/S4F4Y4T/beginner-CSS-projects.git
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
